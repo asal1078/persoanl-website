@@ -1,0 +1,9 @@
+<div class="navbar-fram">
+    <div class="container mt-3" *ngFor="let item of menuList">
+        <div class="row navbar-item justify-content-center">
+            <a [routerLink]="item.routerLink" #title (click)="goToPage()" >
+                {{item.title}}
+            </a>
+        </div>
+    </div>
+</div>

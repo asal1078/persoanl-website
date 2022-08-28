@@ -1,0 +1,28 @@
+.navbar-fram {
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100vh;
+    overflow-y: hidden;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    position: fixed;
+    background-color: white;
+    border-radius: 0px 30px 0px 0px;
+}
+
+.navbar-item a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+.navbar-item a:hover {
+    cursor: pointer;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: rgb(111, 40, 158);
+    font-weight: bold;
+}

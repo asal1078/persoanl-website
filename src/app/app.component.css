@@ -1,0 +1,39 @@
+.main-row {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100vh;
+    background-repeat: repeat-x;
+}
+
+.router-fram {
+    right: 10px;
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: auto;
+}
+
+.animated-background {
+    background: linear-gradient(
+        to right, rgb(185, 122, 181),
+        rgb(86, 121, 197) , rgb(19, 150, 150));
+    background-size: 400%;
+    animation: animate-background 10s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.title-row {
+    background-color: lavender;
+    font-weight: bold;
+}
