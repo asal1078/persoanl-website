@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Inavbar } from 'src/share/models/navbar-links';
+import { NavbarData } from 'src/share/datas/navbar-items';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -9,35 +10,18 @@ import { Inavbar } from 'src/share/models/navbar-links';
 })
 export class AppComponent implements OnInit {
 
-  constructor( private route : ActivatedRoute){
 
-    this.route.data.subscribe(item=>{
-      console.log("DATA",item);
-      
-    })
+  menuList: Array<Inavbar> = [];
+
+  constructor(){
   }
 
   ngOnInit(): void {
+    of(NavbarData).subscribe((data)=>{
+      this.menuList = data;
+    })
   }
 
-  title !: string;
 
-  menuList : Array<Inavbar> = [
-    {
-      title: 'About Me',
-      routerLink: ['/about-me']
-    },
-    {
-      title: 'Projects',
-      routerLink: ['/projects']
-    },
-    {
-      title: 'Education',
-      routerLink: ['/education']
-    },
-    {
-      title: 'Contact Me',
-      routerLink: ['/contact-me']
-    }
-  ]
+
 }

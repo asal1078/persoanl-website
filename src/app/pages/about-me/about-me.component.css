@@ -1,7 +1,3 @@
 .aboutMe-img {
     width: 800px;
 }
-
-::ng-deep .animated-background {
-    height: 150vh;
-}
