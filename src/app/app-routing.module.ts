@@ -10,23 +10,35 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'about-me',
-    pathMatch: 'full'
+    pathMatch: 'full',
   },
   {
     component: AboutMeComponent,
-    path: 'about-me'
+    path: 'about-me',
+    data :{
+      title:'About Me'
+    }
   },
   {
     component: ProjectsComponent,
-    path: 'projects'
+    path: 'projects',
+    data :{
+      title:'Projects'
+    }
   },
   {
     component: EducationComponent,
-    path: 'education'
+    path: 'education',
+    data :{
+      title:'Education'
+    }
   },
   {
     component: ContactMeComponent,
-    path: 'contact-me'
+    path: 'contact-me',
+    data :{
+      title:'Contact Me'
+    }
   },
   {
     component: NotFoundComponent,

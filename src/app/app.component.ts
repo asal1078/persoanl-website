@@ -9,10 +9,15 @@ import { Inavbar } from 'src/share/models/navbar-links';
 })
 export class AppComponent implements OnInit {
 
-  constructor( private route : ActivatedRoute){}
+  constructor( private route : ActivatedRoute){
+
+    this.route.data.subscribe(item=>{
+      console.log("DATA",item);
+      
+    })
+  }
 
   ngOnInit(): void {
-    this.title = this.route.snapshot.params['title'];
   }
 
   title !: string;

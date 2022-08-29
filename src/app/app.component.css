@@ -14,11 +14,14 @@
 }
 
 .animated-background {
+    height: 150vh;
     background: linear-gradient(
         to right, rgb(185, 122, 181),
         rgb(86, 121, 197) , rgb(19, 150, 150));
     background-size: 400%;
     animation: animate-background 10s infinite ease-in-out;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 @keyframes animate-background {
@@ -33,7 +36,3 @@
     }
 }
 
-.title-row {
-    background-color: lavender;
-    font-weight: bold;
-}
