@@ -1,0 +1,14 @@
+.information-box {
+    background-color: rgba(173, 216, 230, 0.137);
+    border-radius: 15px;
+    color: rgba(0, 0, 0, 0.582);
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.contactMe-img {
+    width: 250px;
+}
