@@ -4,8 +4,12 @@ export const NavbarData = [
         routerLink: ['/about-me']
       },
       {
-        title: 'Projects',
-        routerLink: ['/projects']
+        title: 'Skills',
+        routerLink: ['/skills']
+      },
+      {
+        title: 'Works',
+        routerLink: ['/works']
       },
       {
         title: 'Education',
